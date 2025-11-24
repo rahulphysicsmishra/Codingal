@@ -1,0 +1,17 @@
+/* styles.css - EXTERNAL CSS FILE */
+
+/* ELEMENT SELECTOR for <body>:
+   Changes the whole page background and spacing */
+body {
+  background: #e6f7ff;
+  margin: 0;
+  padding: 20px;
+}
+
+/* CLASS SELECTOR:
+   This class is used on one paragraph in the HTML */
+.from-external {
+  color: darkgreen;
+  font-weight: bold;
+  text-decoration: underline;
+}

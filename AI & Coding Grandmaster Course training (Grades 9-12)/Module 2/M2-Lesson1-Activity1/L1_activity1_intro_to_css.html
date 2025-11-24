@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Adventure for Kids</title>
+
+  <!-- 1. EXTERNAL CSS: connects this HTML file to styles.css -->
+  <!-- Make sure styles.css is in the same folder as this HTML file -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- 2. INTERNAL CSS: CSS written inside this HTML file -->
+  <style>
+    /* GLOBAL / UNIVERSAL SELECTOR
+       * selects EVERY element on the page */
+    * {
+      box-sizing: border-box;
+      font-family: "Comic Sans MS", system-ui, sans-serif;
+    }
+
+    /* ELEMENT SELECTOR
+       This rule styles all <h1> elements */
+    h1 {
+      text-align: center;
+      color: darkblue;
+    }
+
+    /* CLASS SELECTOR
+       .css-card can be reused on MANY elements */
+    .css-card {
+      border: 2px solid #333;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 10px;
+      background: #f9f9ff;
+    }
+
+    /* ID SELECTOR
+       #super-important is for ONE special element */
+    #super-important {
+      background: #ffe9a8;
+      border-color: orange;
+    }
+
+    /* Another class to show we can add multiple classes */
+    .highlight {
+      background: #d0f0ff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Page title (styled by ELEMENT SELECTOR h1) -->
+  <h1>🎨 CSS Adventure for Kids</h1>
+
+  <!-- Short intro text (uses class selector .css-card) -->
+  <p class="css-card">
+    In this activity, learn how to use <strong>inline</strong>,
+    <strong>internal</strong>, <strong>external CSS</strong> and also learn
+    about <strong>element</strong>, <strong>class</strong>,
+    <strong>id</strong> and <strong>global</strong> selectors.
+  </p>
+
+  <!-- ELEMENT SELECTOR EXAMPLE -->
+  <section class="css-card highlight">
+    <h2>1. Element Selector</h2>
+    <p>
+      All <code>&lt;h1&gt;</code> tags are blue because of the
+      <code>h1 { ... }</code> rule in internal CSS.
+    </p>
+  </section>
+
+  <!-- ID SELECTOR EXAMPLE -->
+  <section class="css-card" id="super-important">
+    <h2>2. ID Selector</h2>
+    <p>
+      This card has <code>id="super-important"</code>, so the
+      <code>#super-important { ... }</code> rule makes it look extra special.
+    </p>
+  </section>
+
+  <!-- CLASS SELECTOR EXAMPLE -->
+  <section class="css-card">
+    <h2>3. Class Selector</h2>
+    <p>
+      These boxes use <code>class="css-card"</code>. The
+      <code>.css-card { ... }</code> rule gives them borders, padding, and
+      round corners. We can reuse this class on MANY elements.
+    </p>
+  </section>
+
+  <!-- INLINE CSS EXAMPLE -->
+  <section class="css-card">
+    <h2>4. Inline CSS</h2>
+    <p>
+      Inline CSS is written directly on the HTML tag using the
+      <code>style</code> attribute.
+    </p>
+
+    <!-- INLINE CSS: style is written directly inside the tag -->
+    <button
+      style="
+        background: hotpink;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+      "
+    >
+      I use INLINE CSS 👋
+    </button>
+  </section>
+
+  <!-- EXTERNAL CSS EXAMPLE -->
+  <section class="css-card">
+    <h2>5. External CSS</h2>
+    <p>
+      This page is also linked to an external file called
+      <code>styles.css</code>. Try changing that file to see what happens!
+    </p>
+
+    <!-- This paragraph will be styled from styles.css -->
+    <p class="from-external">
+      I am styled using EXTERNAL CSS in <code>styles.css</code>.
+    </p>
+  </section>
+
+  <!-- task for my students-->
+  <footer class="css-card">
+    <p>
+      Tip for young coders: change some colors or sizes, save the file, and
+      refresh the page to see your magic! 🪄
+    </p>
+  </footer>
+</body>
+</html>
