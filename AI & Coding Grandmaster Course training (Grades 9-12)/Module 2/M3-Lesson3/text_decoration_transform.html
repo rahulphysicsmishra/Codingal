@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Transform & Decoration Tutorial</title>
+
+  <style>
+    /* TEXT TRANSFORM SECTION */
+    .uppercase {
+      text-transform: uppercase; /* makes all letters BIG */
+    }
+
+    .lowercase {
+      text-transform: lowercase; /* makes all letters small */
+    }
+
+    .capitalize {
+      text-transform: capitalize; /* first letter of each word becomes BIG */
+    }
+
+    /* TEXT DECORATION SECTION */
+    .underline {
+      text-decoration: underline; /* draws a line UNDER text */
+    }
+
+    .overline {
+      text-decoration: overline; /* line above the text */
+    }
+
+    .line-through {
+      text-decoration: line-through; /* cuts text with a line */
+    }
+
+    .no-decoration {
+      text-decoration: none; /* removes underline (e.g. from links) */
+    }
+
+    /* Just for making the tutorial look cute */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h2 {
+      color: darkblue;
+    }
+    .card {
+      background: #f0f8ff;
+      padding: 12px;
+      border-left: 4px solid #0077cc;
+      margin-bottom: 18px;
+    }
+  </style>
+</head>
+
+    <body>
+
+    <h1>🎨 Text Transform & Text Decoration Tutorial</h1>
+
+    <!-- TEXT TRANSFORM TUTORIAL -->
+    <div class="card">
+        <h2>1. Text Transform</h2>
+        <p>Use <code>text-transform</code> to change the *style of letters*:</p>
+
+        <p class="uppercase">this becomes UPPERCASE</p>
+        <p class="lowercase">THIS BECOMES lowercase</p>
+        <p class="capitalize">this sentence will capitalize each word</p>
+    </div>
+
+    <!-- TEXT DECORATION TUTORIAL -->
+    <div class="card">
+        <h2>2. Text Decoration</h2>
+        <p>Use <code>text-decoration</code> to add lines to text:</p>
+
+        <p class="underline">This text is underlined</p>
+        <p class="overline">This text has an overline</p>
+        <p class="line-through">This text is crossed out (like a mistake!)</p>
+        <p><a href="#" class="no-decoration">This link has NO underline</a></p>
+    </div>
+
+     <p>Try changing colors, sizes, or adding your own examples!</p>
+
+    </body>
+</html>
