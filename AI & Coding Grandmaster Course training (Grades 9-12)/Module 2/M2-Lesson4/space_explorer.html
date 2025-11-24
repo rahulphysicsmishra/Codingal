@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Space CSS Mission – Advanced Selectors</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="space-header">
+    <h1>🚀 Space CSS Mission</h1>
+    <p class="subtitle">
+      Advanced Selectors, Pseudo-classes &amp; Pseudo-elements
+    </p>
+  </header>
+
+  <main class="mission-area">
+    <!-- LEARNING OUTCOMES SECTION -->
+    <section class="mission-card" id="learning-outcomes">
+      <h2>Mission Log: What We Learned</h2>
+
+      <!-- We will style these list items using attribute selectors and pseudo-elements -->
+      <ul class="outcomes-list">
+        <li data-type="selector">
+          Learned how to style specific elements based on conditions or attributes.
+        </li>
+        <li data-type="action">
+          Understood how to change element styles based on user actions like hovering.
+        </li>
+        <li data-type="element">
+          Gained knowledge of adding extra content or styling parts of an element, like the first letter.
+        </li>
+        <li data-type="magic">
+          Applied these advanced styling techniques to make web pages more interactive and visually appealing.
+        </li>
+      </ul>
+    </section>
+
+    <!-- INTERACTIVE DEMO SECTION -->
+    <section class="mission-card">
+      <h2>Try It! (Hover &amp; Focus)</h2>
+      <p class="hint">Hover over the rocks and click inside the input box.</p>
+
+      <!-- We will use :hover and :nth-child here -->
+      <ul class="demo-list">
+        <li>Hover on me to see a glow.</li>
+        <li>I'm the second space rock.</li>
+        <li>I'm the last one, a bit different.</li>
+      </ul>
+
+      <!-- We will use :focus on this input -->
+      <label class="space-label">
+        Space cadet name:
+        <input type="text" placeholder="Type your name" />
+      </label>
+    </section>
+
+    <!-- BADGE WITH PSEUDO-ELEMENTS -->
+    <section class="mission-card badge-section">
+      <h2>Bonus: Space Badge</h2>
+      <!-- We will decorate this using ::before, ::after and ::first-letter -->
+      <p class="badge">Junior Space Styler</p>
+    </section>
+  </main>
+
+  <footer class="space-footer">
+    <p>Tip: Open <code>styles.css</code> to see how the magic works!</p>
+  </footer>
+</body>
+</html>
